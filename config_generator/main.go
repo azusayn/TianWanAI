@@ -152,48 +152,46 @@ func readCamerasFromFile(filePath string) []CameraInfo {
 	return filteredCameras
 }
 
-// generate config file.
-type AlertServer struct {
-	Url       string `json:"url"`
-	Enabled   bool   `json:"enabled"`
-	UpdatedAt string `json:"updated_at"`
-}
-
 type InferenceServer struct {
-	Id        string `json:"id"`
-	Name      string `json:"name"`
-	Url       string `json:"url"`
-	ModelType string `json:"model_type"`
-	Enabled   bool   `json:"enabled"`
-	CreatedAt string `json:"created_at"`
-	UpdatedAt string `json:"updated_at"`
+	ID          string    `json:"id"`
+	Name        string    `json:"name"` // User-friendly name/alias
+	URL         string    `json:"url"`
+	ModelType   string    `json:"model_type"`            // e.g., "yolo", "detectron2", "custom"
+	Description string    `json:"description,omitempty"` // Optional description
+	Enabled     bool      `json:"enabled"`
+	CreatedAt   time.Time `json:"created_at"`
+	UpdatedAt   time.Time `json:"updated_at"`
 }
 
-type InferenceServers map[string]InferenceServer
-
+// InferenceServerBinding represents a binding between camera and inference server with threshold
 type InferenceServerBinding struct {
-	ServerId     string  `json:"server_id"`
-	Threshold    float32 `json:"threshold"`
-	MaxThreshold float32 `json:"max_threshold"`
+	ServerID     string  `json:"server_id"`
+	Threshold    float64 `json:"threshold"`     // Minimum confidence threshold (0.0-1.0) for saving images
+	MaxThreshold float64 `json:"max_threshold"` // Maximum confidence threshold (0.0-1.0) for saving images
 }
 
-type Camera struct {
-	Id                      string                   `json:"id"`
-	Name                    string                   `json:"name"`
-	RtspUrl                 string                   `json:"rtsp_url"`
-	InferenceServerBindings []InferenceServerBinding `json:"inference_server_bindings"`
+type CameraConfig struct {
+	ID                      string                   `json:"id"`
+	Name                    string                   `json:"name"` // Now directly contains KKS encoding
+	RTSPUrl                 string                   `json:"rtsp_url"`
+	InferenceServerBindings []InferenceServerBinding `json:"inference_server_bindings,omitempty"` // Array of server bindings with thresholds
 	Enabled                 bool                     `json:"enabled"`
 	Running                 bool                     `json:"running"`
-	CreatedAt               string                   `json:"created_at"`
-	UpdatedAt               string                   `json:"updated_at"`
+	CreatedAt               time.Time                `json:"created_at"`
+	UpdatedAt               time.Time                `json:"updated_at"`
 }
 
-type Cameras map[string]Camera
+// AlertServerConfig represents the global alert server configuration
+type AlertServerConfig struct {
+	URL       string    `json:"url"`     // Alert platform URL
+	Enabled   bool      `json:"enabled"` // Whether alert is enabled globally
+	UpdatedAt time.Time `json:"updated_at"`
+}
 
-type ServerConfig struct {
-	Cameras          Cameras          `json:"cameras"`
-	InferenceServers InferenceServers `json:"inference_servers"`
-	AlertServer      AlertServer      `json:"alert_server"`
+type DataStore struct {
+	Cameras          map[string]*CameraConfig    `json:"cameras"`
+	InferenceServers map[string]*InferenceServer `json:"inference_servers"`
+	AlertServer      *AlertServerConfig          `json:"alert_server,omitempty"` // Global alert server config
 }
 
 // TODO: move these functions to 'common' package
@@ -205,13 +203,13 @@ func GenerateUUID() string {
 }
 
 func main() {
-	serverConfig := ServerConfig{
-		Cameras:          make(Cameras),
-		InferenceServers: make(InferenceServers),
-		AlertServer: AlertServer{
-			Url:       "http://192.168.1.82:80/api/account/ai/alarm",
+	serverConfig := DataStore{
+		Cameras:          make(map[string]*CameraConfig),
+		InferenceServers: make(map[string]*InferenceServer),
+		AlertServer: &AlertServerConfig{
+			URL:       "http://192.168.1.82:80/api/account/ai/alarm",
 			Enabled:   false,
-			UpdatedAt: GetCurrentTime(),
+			UpdatedAt: time.Now(),
 		},
 	}
 
@@ -254,7 +252,6 @@ func main() {
 	var availableBServerIds []string
 	for i, addr := range availableAServerAddrs {
 		for _, t := range aServerModelTypes {
-			now := GetCurrentTime()
 			id := fmt.Sprintf("inf_%s_%s", t, GenerateUUID())
 			// TODO: it should be noted that both the fire and the smoke
 			// models are using the same url: /smoke
@@ -262,14 +259,14 @@ func main() {
 			if t == "fire" {
 				modelUrl = "smoke"
 			}
-			serverConfig.InferenceServers[id] = InferenceServer{
-				Id:        id,
+			serverConfig.InferenceServers[id] = &InferenceServer{
+				ID:        id,
 				Name:      fmt.Sprintf("%s%d", t, i+1),
-				Url:       fmt.Sprintf("http://%s/%s", addr, modelUrl),
+				URL:       fmt.Sprintf("http://%s/%s", addr, modelUrl),
 				ModelType: t,
 				Enabled:   true,
-				CreatedAt: now,
-				UpdatedAt: now,
+				CreatedAt: time.Now(),
+				UpdatedAt: time.Now(),
 			}
 			availableAServerIds = append(availableAServerIds, id)
 		}
@@ -277,16 +274,15 @@ func main() {
 
 	for i, addr := range availableBServerAddrs {
 		t := "safetybelt"
-		now := GetCurrentTime()
 		id := fmt.Sprintf("inf_%s_%s", t, GenerateUUID())
-		serverConfig.InferenceServers[id] = InferenceServer{
-			Id:        id,
+		serverConfig.InferenceServers[id] = &InferenceServer{
+			ID:        id,
 			Name:      fmt.Sprintf("%s%d", t, i+1),
-			Url:       fmt.Sprintf("http://%s/%s", addr, t),
+			URL:       fmt.Sprintf("http://%s/%s", addr, t),
 			ModelType: t,
 			Enabled:   true,
-			CreatedAt: now,
-			UpdatedAt: now,
+			CreatedAt: time.Now(),
+			UpdatedAt: time.Now(),
 		}
 		availableBServerIds = append(availableBServerIds, id)
 	}
@@ -294,17 +290,16 @@ func main() {
 	// generate 'cameras' section
 	ia, ib := 0, 0
 	for _, c := range readCamerasFromFile("docs/info.xlsx") {
-		now := GetCurrentTime()
 		// basic info
 		cid := fmt.Sprintf("cam_%s", GenerateUUID())
-		camera := Camera{
-			Id:        cid,
+		camera := CameraConfig{
+			ID:        cid,
 			Name:      c.DeviceName,
-			RtspUrl:   c.RtspURL,
+			RTSPUrl:   c.RtspURL,
 			Enabled:   true,
 			Running:   true,
-			CreatedAt: now,
-			UpdatedAt: now,
+			CreatedAt: time.Now(),
+			UpdatedAt: time.Now(),
 		}
 		// bindings
 		for _, m := range c.Models {
@@ -315,16 +310,16 @@ func main() {
 			}
 			// arrange to type B server
 			if m == "safetybelt" {
-				binding.ServerId = availableBServerIds[ib]
+				binding.ServerID = availableBServerIds[ib]
 				ib = (ib + 1) % len(availableBServerIds)
 			} else {
 				// arrange to type A server
-				binding.ServerId = availableAServerIds[ia]
+				binding.ServerID = availableAServerIds[ia]
 				ia = (ia + 1) % len(availableAServerIds)
 			}
 			camera.InferenceServerBindings = append(camera.InferenceServerBindings, binding)
 		}
-		serverConfig.Cameras[cid] = camera
+		serverConfig.Cameras[cid] = &camera
 	}
 
 	// write server config to local file

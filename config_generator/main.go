@@ -202,6 +202,20 @@ func GenerateUUID() string {
 	return strings.ReplaceAll(uuid.New().String(), "-", "")
 }
 
+type AvailableServer struct {
+	ID        string
+	modelType string
+}
+
+func findAvailableServerId(servers []AvailableServer, modelType string) string {
+	for _, s := range servers {
+		if s.modelType == modelType {
+			return s.ID
+		}
+	}
+	return ""
+}
+
 func main() {
 	serverConfig := DataStore{
 		Cameras:          make(map[string]*CameraConfig),
@@ -248,9 +262,9 @@ func main() {
 		"fire",
 	}
 
-	var availableAServerIds []string
-	var availableBServerIds []string
+	allAvailableServers := make(map[string][]AvailableServer)
 	for i, addr := range availableAServerAddrs {
+		var availableServerByIp []AvailableServer
 		for _, t := range aServerModelTypes {
 			id := fmt.Sprintf("inf_%s_%s", t, GenerateUUID())
 			// TODO: it should be noted that both the fire and the smoke
@@ -268,11 +282,17 @@ func main() {
 				CreatedAt: time.Now(),
 				UpdatedAt: time.Now(),
 			}
-			availableAServerIds = append(availableAServerIds, id)
+			availableServerByIp = append(availableServerByIp, AvailableServer{
+				ID:        id,
+				modelType: t,
+			})
 		}
+		allAvailableServers[addr] = availableServerByIp
 	}
 
 	for i, addr := range availableBServerAddrs {
+		var availableServerByIp []AvailableServer
+
 		t := "safetybelt"
 		id := fmt.Sprintf("inf_%s_%s", t, GenerateUUID())
 		serverConfig.InferenceServers[id] = &InferenceServer{
@@ -284,7 +304,11 @@ func main() {
 			CreatedAt: time.Now(),
 			UpdatedAt: time.Now(),
 		}
-		availableBServerIds = append(availableBServerIds, id)
+		availableServerByIp = append(availableServerByIp, AvailableServer{
+			ID:        id,
+			modelType: t,
+		})
+		allAvailableServers[addr] = availableServerByIp
 	}
 
 	// generate 'cameras' section
@@ -310,12 +334,14 @@ func main() {
 			}
 			// arrange to type B server
 			if m == "safetybelt" {
-				binding.ServerID = availableBServerIds[ib]
-				ib = (ib + 1) % len(availableBServerIds)
+				ip := availableBServerAddrs[ib]
+				binding.ServerID = findAvailableServerId(allAvailableServers[ip], m)
+				ib = (ib + 1) % len(availableBServerAddrs)
 			} else {
 				// arrange to type A server
-				binding.ServerID = availableAServerIds[ia]
-				ia = (ia + 1) % len(availableAServerIds)
+				ip := availableAServerAddrs[ia]
+				binding.ServerID = findAvailableServerId(allAvailableServers[ip], m)
+				ia = (ia + 1) % len(availableAServerAddrs)
 			}
 			camera.InferenceServerBindings = append(camera.InferenceServerBindings, binding)
 		}

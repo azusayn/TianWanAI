@@ -1,0 +1,1800 @@
+{
+  "cameras": {
+    "cam_01e62d59e6a044e3ad2d8d41c2f41015": {
+      "id": "cam_01e62d59e6a044e3ad2d8d41c2f41015",
+      "name": "6M2DTW105TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1901",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:03:23.355365379+08:00",
+      "updated_at": "2026-01-28T16:03:23.355365588+08:00"
+    },
+    "cam_037990d34c934f7798911f1a6a87661b": {
+      "id": "cam_037990d34c934f7798911f1a6a87661b",
+      "name": "5M1DTW110TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/401",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:06:01.029690916+08:00",
+      "updated_at": "2026-01-28T16:06:01.029690997+08:00"
+    },
+    "cam_1550dba55f7b4a9c9a8e8d7ae34d48ec": {
+      "id": "cam_1550dba55f7b4a9c9a8e8d7ae34d48ec",
+      "name": "5M0DTW114TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3401",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:56:15.99013434+08:00",
+      "updated_at": "2026-01-28T15:56:15.990134506+08:00"
+    },
+    "cam_193c93bead8b4e31b554c109f23707cc": {
+      "id": "cam_193c93bead8b4e31b554c109f23707cc",
+      "name": "5M0DTW109TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2901",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:09:38.760169119+08:00",
+      "updated_at": "2026-01-28T16:09:38.760169266+08:00"
+    },
+    "cam_1996eaf9af39464b8d752dbf1f6ea28b": {
+      "id": "cam_1996eaf9af39464b8d752dbf1f6ea28b",
+      "name": "6M2DTW103TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1701",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_f46b59d9009b43ce964921d7941c7fa9",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f656c91c0d564735a656b275b5169d6c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:12:12.875233785+08:00",
+      "updated_at": "2026-01-28T16:12:12.875233865+08:00"
+    },
+    "cam_1a40f8b0ad6f4eaba6cf88c73eaa2b77": {
+      "id": "cam_1a40f8b0ad6f4eaba6cf88c73eaa2b77",
+      "name": "5M0DTW135TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/5501",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_ec30d5fab47742b28ad55244e23b1d8c",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T14:46:18.700444298+08:00",
+      "updated_at": "2026-01-28T14:46:18.700444422+08:00"
+    },
+    "cam_1a44a8d05c8349869e2fc7650dae8a52": {
+      "id": "cam_1a44a8d05c8349869e2fc7650dae8a52",
+      "name": "5M0DTW130TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/5001",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_ec30d5fab47742b28ad55244e23b1d8c",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_0c77a344d68849d6b8879793df12057f",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T14:42:58.597885813+08:00",
+      "updated_at": "2026-01-28T14:42:58.597886019+08:00"
+    },
+    "cam_2264c3c9f8b5435e9482e5ed767e468a": {
+      "id": "cam_2264c3c9f8b5435e9482e5ed767e468a",
+      "name": "5M1DTW106TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1401",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T10:57:51.259243861+08:00",
+      "updated_at": "2026-01-28T10:57:51.259244122+08:00"
+    },
+    "cam_26f79e42a3fd4aef9717c432e77d0bd4": {
+      "id": "cam_26f79e42a3fd4aef9717c432e77d0bd4",
+      "name": "5M0DTW131TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/5101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_c26477911cd440b294260d5423a1bb69",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_0c77a344d68849d6b8879793df12057f",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T14:43:41.692881022+08:00",
+      "updated_at": "2026-01-28T14:43:41.692881123+08:00"
+    },
+    "cam_303c5ea6c3ab4d40a823c5e4bb4c0278": {
+      "id": "cam_303c5ea6c3ab4d40a823c5e4bb4c0278",
+      "name": "5M0DTW127TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4701",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:56:38.969073598+08:00",
+      "updated_at": "2026-01-28T15:56:38.969073681+08:00"
+    },
+    "cam_364d2efddfc8417cb5212059f87072d6": {
+      "id": "cam_364d2efddfc8417cb5212059f87072d6",
+      "name": "5M1DTW105TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T10:57:12.991347474+08:00",
+      "updated_at": "2026-01-28T10:57:12.991347715+08:00"
+    },
+    "cam_38ac63dfac7a43b1a8ad27ad67768ff7": {
+      "id": "cam_38ac63dfac7a43b1a8ad27ad67768ff7",
+      "name": "5M0DTW117TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3701",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_26216b1a02df4c8ba15915d049eb45ca",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_1d56dcb317fd475cae929305462b2228",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:10:27.790969433+08:00",
+      "updated_at": "2026-01-28T12:10:27.790969661+08:00"
+    },
+    "cam_3c74b5f7e15840b38a7b280826914e15": {
+      "id": "cam_3c74b5f7e15840b38a7b280826914e15",
+      "name": "5M0DTW124TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4401",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:10:31.333939745+08:00",
+      "updated_at": "2026-01-28T16:10:31.333939893+08:00"
+    },
+    "cam_3d2c660ac3c340afbe70f100b196b7ad": {
+      "id": "cam_3d2c660ac3c340afbe70f100b196b7ad",
+      "name": "5M0DTW112TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:54:33.967220533+08:00",
+      "updated_at": "2026-01-28T15:54:33.967220603+08:00"
+    },
+    "cam_43ba9f8ee6da469a917bbedb6a845d2f": {
+      "id": "cam_43ba9f8ee6da469a917bbedb6a845d2f",
+      "name": "5M0DTW116TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3601",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_26216b1a02df4c8ba15915d049eb45ca",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_1d56dcb317fd475cae929305462b2228",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:10:06.358072186+08:00",
+      "updated_at": "2026-01-28T12:10:06.358072305+08:00"
+    },
+    "cam_4ddc8f36ea5545c4bf7c1202534e4fa9": {
+      "id": "cam_4ddc8f36ea5545c4bf7c1202534e4fa9",
+      "name": "5M0DTW108TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2801",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_61bded2050e04987b37faebf4fda6466",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:06:33.230124439+08:00",
+      "updated_at": "2026-01-28T16:06:33.230124529+08:00"
+    },
+    "cam_545a4e3c59074b7ea52107655f05fdb7": {
+      "id": "cam_545a4e3c59074b7ea52107655f05fdb7",
+      "name": "5M0DTW101TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_tshirt_477dcee96157401d8a21fc6a4f0c6699",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_e4d61f0c3d314b66a8a05562c6468283",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:15:11.33312258+08:00",
+      "updated_at": "2026-01-28T11:15:11.333122795+08:00"
+    },
+    "cam_5daf1d3bb8f149c1bd44e8a9fa208d28": {
+      "id": "cam_5daf1d3bb8f149c1bd44e8a9fa208d28",
+      "name": "5M0DTW113TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_1c3e6ed9c3854ef782dc81950ffa1c70",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_helmet_76cab41deae043cca1bb8a95475dff77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_f2e2a36bb2df4c0592b84fd838312f92",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:55:45.775252558+08:00",
+      "updated_at": "2026-01-28T15:55:45.775252658+08:00"
+    },
+    "cam_5f79cd653ef243bb83d844e3af4f2686": {
+      "id": "cam_5f79cd653ef243bb83d844e3af4f2686",
+      "name": "5M1DTW104TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T10:56:42.399174871+08:00",
+      "updated_at": "2026-01-28T10:56:42.399175123+08:00"
+    },
+    "cam_5fbb1c72eca34d5d83e72c6d725d6f62": {
+      "id": "cam_5fbb1c72eca34d5d83e72c6d725d6f62",
+      "name": "5M0DTW122TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:18:44.991172153+08:00",
+      "updated_at": "2026-01-28T12:18:44.991172322+08:00"
+    },
+    "cam_64488a86a1804bb6b915d37f7c52ffd3": {
+      "id": "cam_64488a86a1804bb6b915d37f7c52ffd3",
+      "name": "5M0DTW125TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4501",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f46b59d9009b43ce964921d7941c7fa9",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f656c91c0d564735a656b275b5169d6c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:11:10.259660353+08:00",
+      "updated_at": "2026-01-28T16:11:10.25966046+08:00"
+    },
+    "cam_680f576c9d094215b2ad2679f8047140": {
+      "id": "cam_680f576c9d094215b2ad2679f8047140",
+      "name": "5M0DTW108TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2801",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_dea568cede3c4149b35da25c188bfe6a",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:58:24.383638482+08:00",
+      "updated_at": "2026-01-28T11:58:24.383638572+08:00"
+    },
+    "cam_68bca40813814d9db1907aabab2e1f0b": {
+      "id": "cam_68bca40813814d9db1907aabab2e1f0b",
+      "name": "5M0DTW103TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_dea568cede3c4149b35da25c188bfe6a",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:16:15.718937034+08:00",
+      "updated_at": "2026-01-28T11:16:15.718937209+08:00"
+    },
+    "cam_691ef23013184b15aa1e47901f6059ad": {
+      "id": "cam_691ef23013184b15aa1e47901f6059ad",
+      "name": "5M0DTW129TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4901",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:57:13.208332506+08:00",
+      "updated_at": "2026-01-28T15:57:13.208332701+08:00"
+    },
+    "cam_7ac821ec58524aa1b40930fc680466ab": {
+      "id": "cam_7ac821ec58524aa1b40930fc680466ab",
+      "name": "5M0DTW121TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_26216b1a02df4c8ba15915d049eb45ca",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_1d56dcb317fd475cae929305462b2228",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:18:14.482450607+08:00",
+      "updated_at": "2026-01-28T12:18:14.482450778+08:00"
+    },
+    "cam_7b18276bda9145ed84c37f0f1f88552b": {
+      "id": "cam_7b18276bda9145ed84c37f0f1f88552b",
+      "name": "6M2DTW109TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/701",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-27T14:59:20.360057671+08:00",
+      "updated_at": "2026-01-27T14:59:20.360057967+08:00"
+    },
+    "cam_845b84648eda49aabfe59dec8c65ef45": {
+      "id": "cam_845b84648eda49aabfe59dec8c65ef45",
+      "name": "5M0DTW120TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4001",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:17:16.144620918+08:00",
+      "updated_at": "2026-01-28T12:17:16.144621037+08:00"
+    },
+    "cam_87482a6876ef444c81213826e3a9f061": {
+      "id": "cam_87482a6876ef444c81213826e3a9f061",
+      "name": "5M1DTW107TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:04:18.902734716+08:00",
+      "updated_at": "2026-01-28T16:04:18.902734859+08:00"
+    },
+    "cam_88657294935b4b84be04dedd192d43a6": {
+      "id": "cam_88657294935b4b84be04dedd192d43a6",
+      "name": "5M0DTW111TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:54:13.900472572+08:00",
+      "updated_at": "2026-01-28T15:54:13.900472725+08:00"
+    },
+    "cam_8bcdae3d2f724721994547e4d0e6c852": {
+      "id": "cam_8bcdae3d2f724721994547e4d0e6c852",
+      "name": "6M2DTW106TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2001",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:03:46.60500908+08:00",
+      "updated_at": "2026-01-28T16:03:46.605009264+08:00"
+    },
+    "cam_8fb56fe1e322497482c18ffba6ad5b7b": {
+      "id": "cam_8fb56fe1e322497482c18ffba6ad5b7b",
+      "name": "5M0DTW133TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/5301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_c26477911cd440b294260d5423a1bb69",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_ec30d5fab47742b28ad55244e23b1d8c",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_0c77a344d68849d6b8879793df12057f",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_1a5d3d83c51b4c389036f849b49569fd",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T14:45:47.536306742+08:00",
+      "updated_at": "2026-01-28T14:45:47.536306876+08:00"
+    },
+    "cam_93d2f5d7f5f449a398d6d932cc965d98": {
+      "id": "cam_93d2f5d7f5f449a398d6d932cc965d98",
+      "name": "5M0DTW102TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:15:34.487466821+08:00",
+      "updated_at": "2026-01-28T11:15:34.487467019+08:00"
+    },
+    "cam_98c51c8c030c444991b07c75222e0103": {
+      "id": "cam_98c51c8c030c444991b07c75222e0103",
+      "name": "5M0DTW110TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3001",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:09:55.307032591+08:00",
+      "updated_at": "2026-01-28T16:09:55.307032719+08:00"
+    },
+    "cam_a83ba49f36a846e08537c5d869fbf116": {
+      "id": "cam_a83ba49f36a846e08537c5d869fbf116",
+      "name": "5M1DTW103TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1101",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-27T15:08:22.430626993+08:00",
+      "updated_at": "2026-01-27T15:08:22.430627159+08:00"
+    },
+    "cam_a8761579d71c426e9e4c103e84e57b53": {
+      "id": "cam_a8761579d71c426e9e4c103e84e57b53",
+      "name": "5M1DTW109TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:05:37.749563558+08:00",
+      "updated_at": "2026-01-28T16:05:37.749563662+08:00"
+    },
+    "cam_b60b28de99ed46bebc0a13b93e5e06f1": {
+      "id": "cam_b60b28de99ed46bebc0a13b93e5e06f1",
+      "name": "5M0DTW128TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4801",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T15:56:55.400201332+08:00",
+      "updated_at": "2026-01-28T15:56:55.40020152+08:00"
+    },
+    "cam_b6b5a4f7b96945f88638f507a721d0b5": {
+      "id": "cam_b6b5a4f7b96945f88638f507a721d0b5",
+      "name": "5M0DTW104TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2401",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:16:42.296903646+08:00",
+      "updated_at": "2026-01-28T11:16:42.296903761+08:00"
+    },
+    "cam_bea53697abef48dda7186c0362eb95cb": {
+      "id": "cam_bea53697abef48dda7186c0362eb95cb",
+      "name": "5M0DTW118TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3801",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:13:01.324493919+08:00",
+      "updated_at": "2026-01-28T12:13:01.32449403+08:00"
+    },
+    "cam_c4a4b81f14834980879e9ef1b06be3ce": {
+      "id": "cam_c4a4b81f14834980879e9ef1b06be3ce",
+      "name": "5M0DTW106TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2601",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_dea568cede3c4149b35da25c188bfe6a",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:17:36.457705582+08:00",
+      "updated_at": "2026-01-28T11:17:36.457705791+08:00"
+    },
+    "cam_d4618ed55cc544838ee4eaf5b737234f": {
+      "id": "cam_d4618ed55cc544838ee4eaf5b737234f",
+      "name": "5M0DTW123TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/4301",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f46b59d9009b43ce964921d7941c7fa9",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:12:58.047342717+08:00",
+      "updated_at": "2026-01-28T16:12:58.047342799+08:00"
+    },
+    "cam_d58aceea1aba44508826c90fe9a6ef54": {
+      "id": "cam_d58aceea1aba44508826c90fe9a6ef54",
+      "name": "5M0DTW107TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2701",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_dea568cede3c4149b35da25c188bfe6a",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_477dcee96157401d8a21fc6a4f0c6699",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_e4d61f0c3d314b66a8a05562c6468283",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:55:45.385754438+08:00",
+      "updated_at": "2026-01-28T11:55:45.385754589+08:00"
+    },
+    "cam_d611d242dec64985b5e9b5d957ad3674": {
+      "id": "cam_d611d242dec64985b5e9b5d957ad3674",
+      "name": "5M0DTW105TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/2501",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T11:17:02.473503315+08:00",
+      "updated_at": "2026-01-28T11:17:02.473503422+08:00"
+    },
+    "cam_d93e59b2f0434b49b8207d858153f3c8": {
+      "id": "cam_d93e59b2f0434b49b8207d858153f3c8",
+      "name": "5M0DTW132TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/5201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_c26477911cd440b294260d5423a1bb69",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_ec30d5fab47742b28ad55244e23b1d8c",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_0c77a344d68849d6b8879793df12057f",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_1a5d3d83c51b4c389036f849b49569fd",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T14:45:10.745197997+08:00",
+      "updated_at": "2026-01-28T14:45:10.745198077+08:00"
+    },
+    "cam_e3311760a7d24b94b835908c0969047b": {
+      "id": "cam_e3311760a7d24b94b835908c0969047b",
+      "name": "6M2DTW102TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/1601",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_f46b59d9009b43ce964921d7941c7fa9",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f656c91c0d564735a656b275b5169d6c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:11:49.200902121+08:00",
+      "updated_at": "2026-01-28T16:11:49.200902262+08:00"
+    },
+    "cam_f239ed09cfdd4a2583dbd19dcbb36b7b": {
+      "id": "cam_f239ed09cfdd4a2583dbd19dcbb36b7b",
+      "name": "5M1DTW108TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/201",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_fall_61bded2050e04987b37faebf4fda6466",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+          "threshold": 0.5,
+          "max_threshold": 0
+        },
+        {
+          "server_id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+          "threshold": 0.5,
+          "max_threshold": 0
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T16:04:55.590919142+08:00",
+      "updated_at": "2026-01-28T16:04:55.590919263+08:00"
+    },
+    "cam_f3efa9017cc4420aa7dd510cb68bfef0": {
+      "id": "cam_f3efa9017cc4420aa7dd510cb68bfef0",
+      "name": "6M2DTW110TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/801",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-27T14:59:50.683343424+08:00",
+      "updated_at": "2026-01-27T14:59:50.683343659+08:00"
+    },
+    "cam_fbf3c81170a34be2893da10e6fd78bc8": {
+      "id": "cam_fbf3c81170a34be2893da10e6fd78bc8",
+      "name": "5M0DTW119TV",
+      "rtsp_url": "rtsp://admin:jidian12@192.168.1.80/Streaming/Channels/3901",
+      "inference_server_bindings": [
+        {
+          "server_id": "inf_mouse_26216b1a02df4c8ba15915d049eb45ca",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_tshirt_1d56dcb317fd475cae929305462b2228",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+          "threshold": 0.5,
+          "max_threshold": 1
+        },
+        {
+          "server_id": "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d",
+          "threshold": 0.5,
+          "max_threshold": 1
+        }
+      ],
+      "enabled": true,
+      "running": true,
+      "created_at": "2026-01-28T12:15:28.917386275+08:00",
+      "updated_at": "2026-01-28T12:15:28.917386419+08:00"
+    }
+  },
+  "inference_servers": {
+    "inf_cigar_17555c4124c44fc282292802f8ca28c3": {
+      "id": "inf_cigar_17555c4124c44fc282292802f8ca28c3",
+      "name": "Cigar5",
+      "url": "http://192.168.1.86:8906/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T15:51:30.911040308+08:00",
+      "updated_at": "2026-01-28T15:51:30.911040455+08:00"
+    },
+    "inf_cigar_30cad8d4a8194e35975aa967a44d2fcf": {
+      "id": "inf_cigar_30cad8d4a8194e35975aa967a44d2fcf",
+      "name": "Cigar6",
+      "url": "http://192.168.1.86:8907/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T15:58:18.991506572+08:00",
+      "updated_at": "2026-01-28T15:58:18.991506808+08:00"
+    },
+    "inf_cigar_3753cda981924d6eaf3c8960e760d3f1": {
+      "id": "inf_cigar_3753cda981924d6eaf3c8960e760d3f1",
+      "name": "Cigar7",
+      "url": "http://192.168.1.86:8908/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T16:07:40.823525237+08:00",
+      "updated_at": "2026-01-28T16:07:40.823525378+08:00"
+    },
+    "inf_cigar_43dd80e4824d4530be52e3dacd11c0f2": {
+      "id": "inf_cigar_43dd80e4824d4530be52e3dacd11c0f2",
+      "name": "Cigar4",
+      "url": "http://192.168.1.86:8905/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T14:40:51.443584609+08:00",
+      "updated_at": "2026-01-28T14:40:51.443584742+08:00"
+    },
+    "inf_cigar_5147834b29d34a5da6d06426558fd46e": {
+      "id": "inf_cigar_5147834b29d34a5da6d06426558fd46e",
+      "name": "Cigar2",
+      "url": "http://192.168.1.86:8903/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T11:11:33.417746644+08:00",
+      "updated_at": "2026-01-28T11:11:33.417746762+08:00"
+    },
+    "inf_cigar_cb841f9315104c32b1e259a5c8edde6b": {
+      "id": "inf_cigar_cb841f9315104c32b1e259a5c8edde6b",
+      "name": "Cigar3",
+      "url": "http://192.168.1.86:8904/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2026-01-28T12:06:31.116964361+08:00",
+      "updated_at": "2026-01-28T12:06:31.116964534+08:00"
+    },
+    "inf_cigar_eea04af3948e4a5aabbfb8a2795cebb5": {
+      "id": "inf_cigar_eea04af3948e4a5aabbfb8a2795cebb5",
+      "name": "Cigar",
+      "url": "http://192.168.1.86:8901/cigar",
+      "model_type": "cigar",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:20.303720185+08:00",
+      "updated_at": "2025-09-19T09:07:20.303720264+08:00"
+    },
+    "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce": {
+      "id": "inf_fall_0fe5ddb9b07f4bd79e3376e498d9bdce",
+      "name": "Fall7",
+      "url": "http://192.168.1.86:8908/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T16:09:16.165251874+08:00",
+      "updated_at": "2026-01-28T16:09:16.165252206+08:00"
+    },
+    "inf_fall_61bded2050e04987b37faebf4fda6466": {
+      "id": "inf_fall_61bded2050e04987b37faebf4fda6466",
+      "name": "Fall6",
+      "url": "http://192.168.1.86:8907/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T15:58:57.83335262+08:00",
+      "updated_at": "2026-01-28T15:58:57.833352712+08:00"
+    },
+    "inf_fall_7989a71d5bf642469bbc12e7ba24e697": {
+      "id": "inf_fall_7989a71d5bf642469bbc12e7ba24e697",
+      "name": "Fall2",
+      "url": "http://192.168.1.86:8903/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T11:11:54.968197286+08:00",
+      "updated_at": "2026-01-28T11:11:54.968197486+08:00"
+    },
+    "inf_fall_8949a1e21a184268bbcaf22755983476": {
+      "id": "inf_fall_8949a1e21a184268bbcaf22755983476",
+      "name": "Fall",
+      "url": "http://192.168.1.86:8901/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:11.422988646+08:00",
+      "updated_at": "2025-09-19T09:07:11.422988717+08:00"
+    },
+    "inf_fall_d00336bef5034f5aa0c3db098ab63c1b": {
+      "id": "inf_fall_d00336bef5034f5aa0c3db098ab63c1b",
+      "name": "Fall5",
+      "url": "http://192.168.1.86:8906/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T15:51:45.923920255+08:00",
+      "updated_at": "2026-01-28T15:51:45.92392044+08:00"
+    },
+    "inf_fall_ec30d5fab47742b28ad55244e23b1d8c": {
+      "id": "inf_fall_ec30d5fab47742b28ad55244e23b1d8c",
+      "name": "Fall4",
+      "url": "http://192.168.1.86:8905/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:46.226150421+08:00",
+      "updated_at": "2026-01-28T14:41:46.226150597+08:00"
+    },
+    "inf_fall_fbbe50f2823a47ce8181b316012951e2": {
+      "id": "inf_fall_fbbe50f2823a47ce8181b316012951e2",
+      "name": "Fall3",
+      "url": "http://192.168.1.86:8904/fall",
+      "model_type": "fall",
+      "enabled": true,
+      "created_at": "2026-01-28T12:06:58.139652778+08:00",
+      "updated_at": "2026-01-28T12:06:58.139652854+08:00"
+    },
+    "inf_fire_0f9cf6f6a6fb4f7b91929b9ebb23b0c7": {
+      "id": "inf_fire_0f9cf6f6a6fb4f7b91929b9ebb23b0c7",
+      "name": "Fire",
+      "url": "http://192.168.1.86:8901/smoke",
+      "model_type": "fire",
+      "enabled": true,
+      "created_at": "2025-09-19T17:09:04.69910623+08:00",
+      "updated_at": "2025-09-19T17:09:04.699106435+08:00"
+    },
+    "inf_gesture2_5dd1132de6fa4c6badb4939a1b40d25d": {
+      "id": "inf_gesture2_5dd1132de6fa4c6badb4939a1b40d25d",
+      "name": "Gesture2",
+      "url": "http://192.168.1.86:8903/gesture2",
+      "model_type": "gesture2",
+      "enabled": true,
+      "created_at": "2026-01-28T11:13:33.641537637+08:00",
+      "updated_at": "2026-01-28T11:13:33.641538023+08:00"
+    },
+    "inf_gesture_553b78c090374c33b608792e9aefb204": {
+      "id": "inf_gesture_553b78c090374c33b608792e9aefb204",
+      "name": "Gesture",
+      "url": "http://192.168.1.86:8901/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:00.971709345+08:00",
+      "updated_at": "2025-09-19T09:07:00.971709408+08:00"
+    },
+    "inf_gesture_8d31a51ee7dd409a8e31f28f19d3fc8d": {
+      "id": "inf_gesture_8d31a51ee7dd409a8e31f28f19d3fc8d",
+      "name": "Gesture7",
+      "url": "http://192.168.1.86:8908/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2026-01-28T16:08:03.853854653+08:00",
+      "updated_at": "2026-01-28T16:08:03.853854895+08:00"
+    },
+    "inf_gesture_8fc61b25dcf24de789639e20e78a2ed7": {
+      "id": "inf_gesture_8fc61b25dcf24de789639e20e78a2ed7",
+      "name": "Gesture5",
+      "url": "http://192.168.1.86:8906/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2026-01-28T15:51:40.04888839+08:00",
+      "updated_at": "2026-01-28T15:51:40.04888864+08:00"
+    },
+    "inf_gesture_915121f5daba436ba4ce60eb735c8d59": {
+      "id": "inf_gesture_915121f5daba436ba4ce60eb735c8d59",
+      "name": "Gesture6",
+      "url": "http://192.168.1.86:8907/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2026-01-28T15:58:50.185539159+08:00",
+      "updated_at": "2026-01-28T15:58:50.185539289+08:00"
+    },
+    "inf_gesture_a10b4ffe44c946bdbb7d609788068cd0": {
+      "id": "inf_gesture_a10b4ffe44c946bdbb7d609788068cd0",
+      "name": "Gesture3",
+      "url": "http://192.168.1.86:8904/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2026-01-28T12:09:01.345129266+08:00",
+      "updated_at": "2026-01-28T12:09:01.345129348+08:00"
+    },
+    "inf_gesture_edcd442d1da0494593d6af896afbacfd": {
+      "id": "inf_gesture_edcd442d1da0494593d6af896afbacfd",
+      "name": "Gesture4",
+      "url": "http://192.168.1.86:8905/gesture",
+      "model_type": "gesture",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:04.167994084+08:00",
+      "updated_at": "2026-01-28T14:41:04.167994152+08:00"
+    },
+    "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d": {
+      "id": "inf_helmet_04ea18b4a808475784c7b9c6e594fc1d",
+      "name": "Helmet3",
+      "url": "http://192.168.1.86:8904/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T12:07:25.142750529+08:00",
+      "updated_at": "2026-01-28T12:07:25.14275067+08:00"
+    },
+    "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94": {
+      "id": "inf_helmet_4e6d1094db7c4155b2aabbfddad7dd94",
+      "name": "Helmet7",
+      "url": "http://192.168.1.86:8908/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T16:07:52.258839711+08:00",
+      "updated_at": "2026-01-28T16:07:52.258839804+08:00"
+    },
+    "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3": {
+      "id": "inf_helmet_5854510e8b8449ff8199cb048b5ad9f3",
+      "name": "Helmet4",
+      "url": "http://192.168.1.86:8905/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:34.50055157+08:00",
+      "updated_at": "2026-01-28T14:41:34.500551672+08:00"
+    },
+    "inf_helmet_76cab41deae043cca1bb8a95475dff77": {
+      "id": "inf_helmet_76cab41deae043cca1bb8a95475dff77",
+      "name": "Helmet5",
+      "url": "http://192.168.1.86:8906/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T15:52:11.180316398+08:00",
+      "updated_at": "2026-01-28T15:52:11.180316533+08:00"
+    },
+    "inf_helmet_a7889d9bca8a46e894a5f55c23d19940": {
+      "id": "inf_helmet_a7889d9bca8a46e894a5f55c23d19940",
+      "name": "Helmet6",
+      "url": "http://192.168.1.86:8907/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T15:58:42.607507141+08:00",
+      "updated_at": "2026-01-28T15:58:42.607507214+08:00"
+    },
+    "inf_helmet_e4d61f0c3d314b66a8a05562c6468283": {
+      "id": "inf_helmet_e4d61f0c3d314b66a8a05562c6468283",
+      "name": "Helmet2",
+      "url": "http://192.168.1.86:8903/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2026-01-28T11:12:38.083505138+08:00",
+      "updated_at": "2026-01-28T11:12:38.083505324+08:00"
+    },
+    "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3": {
+      "id": "inf_helmet_f531c7c2e4fc4019bd459cf2852c1ef3",
+      "name": "Helmet",
+      "url": "http://192.168.1.86:8901/helmet",
+      "model_type": "helmet",
+      "enabled": true,
+      "created_at": "2025-09-19T09:06:41.650607551+08:00",
+      "updated_at": "2025-09-19T09:06:41.650607634+08:00"
+    },
+    "inf_mouse_1a5d3d83c51b4c389036f849b49569fd": {
+      "id": "inf_mouse_1a5d3d83c51b4c389036f849b49569fd",
+      "name": "Mouse4",
+      "url": "http://192.168.1.86:8905/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:22.851522415+08:00",
+      "updated_at": "2026-01-28T14:41:22.851522533+08:00"
+    },
+    "inf_mouse_1c3e6ed9c3854ef782dc81950ffa1c70": {
+      "id": "inf_mouse_1c3e6ed9c3854ef782dc81950ffa1c70",
+      "name": "Mouse5",
+      "url": "http://192.168.1.86:8906/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T15:52:02.203975126+08:00",
+      "updated_at": "2026-01-28T15:52:02.203975252+08:00"
+    },
+    "inf_mouse_26216b1a02df4c8ba15915d049eb45ca": {
+      "id": "inf_mouse_26216b1a02df4c8ba15915d049eb45ca",
+      "name": "Mouse3",
+      "url": "http://192.168.1.86:8904/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T12:06:40.129780741+08:00",
+      "updated_at": "2026-01-28T12:06:40.129780891+08:00"
+    },
+    "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4": {
+      "id": "inf_mouse_a0284c3d218b4a9a88ced2808d6b79c4",
+      "name": "Mouse",
+      "url": "http://192.168.1.86:8901/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:44.53319411+08:00",
+      "updated_at": "2025-09-19T09:07:44.533194176+08:00"
+    },
+    "inf_mouse_dea568cede3c4149b35da25c188bfe6a": {
+      "id": "inf_mouse_dea568cede3c4149b35da25c188bfe6a",
+      "name": "Mouse2",
+      "url": "http://192.168.1.86:8903/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T11:12:12.587543662+08:00",
+      "updated_at": "2026-01-28T11:12:12.587544048+08:00"
+    },
+    "inf_mouse_f656c91c0d564735a656b275b5169d6c": {
+      "id": "inf_mouse_f656c91c0d564735a656b275b5169d6c",
+      "name": "Mouse7",
+      "url": "http://192.168.1.86:8908/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T16:08:42.135446742+08:00",
+      "updated_at": "2026-01-28T16:08:42.135446993+08:00"
+    },
+    "inf_mouse_f65ba2cc766b4d2e810282868a79af4e": {
+      "id": "inf_mouse_f65ba2cc766b4d2e810282868a79af4e",
+      "name": "Mouse6",
+      "url": "http://192.168.1.86:8907/mouse",
+      "model_type": "mouse",
+      "enabled": true,
+      "created_at": "2026-01-28T15:59:07.250627367+08:00",
+      "updated_at": "2026-01-28T15:59:07.250627448+08:00"
+    },
+    "inf_ponding_0c77a344d68849d6b8879793df12057f": {
+      "id": "inf_ponding_0c77a344d68849d6b8879793df12057f",
+      "name": "Ponding4",
+      "url": "http://192.168.1.86:8905/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:12.755042567+08:00",
+      "updated_at": "2026-01-28T14:41:12.755042646+08:00"
+    },
+    "inf_ponding_2b4131bef03d4d61927d122f07ed3adc": {
+      "id": "inf_ponding_2b4131bef03d4d61927d122f07ed3adc",
+      "name": "Ponding2",
+      "url": "http://192.168.1.86:8903/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T11:12:45.849546152+08:00",
+      "updated_at": "2026-01-28T11:12:45.849546307+08:00"
+    },
+    "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9": {
+      "id": "inf_ponding_52a765ae2d47431b9e6bf695b6f3bcc9",
+      "name": "Ponding",
+      "url": "http://192.168.1.86:8901/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:51.241457915+08:00",
+      "updated_at": "2025-09-19T09:07:51.241457987+08:00"
+    },
+    "inf_ponding_6df43f00dc014dcaa75929a8975041db": {
+      "id": "inf_ponding_6df43f00dc014dcaa75929a8975041db",
+      "name": "Ponding3",
+      "url": "http://192.168.1.86:8904/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T12:08:11.259537063+08:00",
+      "updated_at": "2026-01-28T12:08:11.259537143+08:00"
+    },
+    "inf_ponding_8d430e631c484e20b7538a687715f4eb": {
+      "id": "inf_ponding_8d430e631c484e20b7538a687715f4eb",
+      "name": "Ponding5",
+      "url": "http://192.168.1.86:8906/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T15:51:54.877714752+08:00",
+      "updated_at": "2026-01-28T15:51:54.877715023+08:00"
+    },
+    "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77": {
+      "id": "inf_ponding_f143e089006f4d20bfd13bf9a3f5ba77",
+      "name": "Ponding6",
+      "url": "http://192.168.1.86:8907/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T15:59:14.841068766+08:00",
+      "updated_at": "2026-01-28T15:59:14.841068898+08:00"
+    },
+    "inf_ponding_f46b59d9009b43ce964921d7941c7fa9": {
+      "id": "inf_ponding_f46b59d9009b43ce964921d7941c7fa9",
+      "name": "Ponding7",
+      "url": "http://192.168.1.86:8908/ponding",
+      "model_type": "ponding",
+      "enabled": true,
+      "created_at": "2026-01-28T16:08:15.397634981+08:00",
+      "updated_at": "2026-01-28T16:08:15.397635091+08:00"
+    },
+    "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320": {
+      "id": "inf_safetybelt_a913ad8eb6f746dd9d165347c4c0e320",
+      "name": "Safetybelt",
+      "url": "http://192.168.1.86:8902/safetybelt",
+      "model_type": "safetybelt",
+      "enabled": true,
+      "created_at": "2025-09-19T09:08:12.856146199+08:00",
+      "updated_at": "2025-09-19T09:08:12.856146267+08:00"
+    },
+    "inf_smoke_2d5d35e7cae84da8a041afcc25a7de69": {
+      "id": "inf_smoke_2d5d35e7cae84da8a041afcc25a7de69",
+      "name": "Smoke2",
+      "url": "http://192.168.1.86:8903/smoke",
+      "model_type": "smoke",
+      "enabled": true,
+      "created_at": "2026-01-28T11:13:51.215509568+08:00",
+      "updated_at": "2026-01-28T11:13:51.215509741+08:00"
+    },
+    "inf_smoke_51a7de6c78cb4268be144ab34514667c": {
+      "id": "inf_smoke_51a7de6c78cb4268be144ab34514667c",
+      "name": "Smoke",
+      "url": "http://192.168.1.86:8901/smoke",
+      "model_type": "smoke",
+      "enabled": true,
+      "created_at": "2025-09-19T17:09:17.83158246+08:00",
+      "updated_at": "2025-09-19T17:09:17.831582539+08:00"
+    },
+    "inf_tshirt_1d56dcb317fd475cae929305462b2228": {
+      "id": "inf_tshirt_1d56dcb317fd475cae929305462b2228",
+      "name": "Tshirt3",
+      "url": "http://192.168.1.86:8904/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T12:08:34.359844607+08:00",
+      "updated_at": "2026-01-28T12:08:34.359844692+08:00"
+    },
+    "inf_tshirt_252d051e0d13490e8947a65f1314955e": {
+      "id": "inf_tshirt_252d051e0d13490e8947a65f1314955e",
+      "name": "Tshirt",
+      "url": "http://192.168.1.86:8901/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2025-09-19T09:07:30.792185098+08:00",
+      "updated_at": "2025-09-19T09:07:30.792185169+08:00"
+    },
+    "inf_tshirt_477dcee96157401d8a21fc6a4f0c6699": {
+      "id": "inf_tshirt_477dcee96157401d8a21fc6a4f0c6699",
+      "name": "Tshirt2",
+      "url": "http://192.168.1.86:8903/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T11:12:22.22496565+08:00",
+      "updated_at": "2026-01-28T11:12:22.224965848+08:00"
+    },
+    "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c": {
+      "id": "inf_tshirt_6950d60725064de48ef3fec0fbefdb3c",
+      "name": "Tshirt7",
+      "url": "http://192.168.1.86:8908/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T16:08:27.527032644+08:00",
+      "updated_at": "2026-01-28T16:08:27.527032798+08:00"
+    },
+    "inf_tshirt_c26477911cd440b294260d5423a1bb69": {
+      "id": "inf_tshirt_c26477911cd440b294260d5423a1bb69",
+      "name": "Tshirt4",
+      "url": "http://192.168.1.86:8905/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T14:41:56.900491432+08:00",
+      "updated_at": "2026-01-28T14:41:56.900491521+08:00"
+    },
+    "inf_tshirt_f2e2a36bb2df4c0592b84fd838312f92": {
+      "id": "inf_tshirt_f2e2a36bb2df4c0592b84fd838312f92",
+      "name": "Tshirt5",
+      "url": "http://192.168.1.86:8906/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T15:53:19.435382276+08:00",
+      "updated_at": "2026-01-28T15:53:19.435383552+08:00"
+    },
+    "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375": {
+      "id": "inf_tshirt_ff6d8ef47cd54bdcaf96dd9f5082f375",
+      "name": "Tshirt6",
+      "url": "http://192.168.1.86:8907/tshirt",
+      "model_type": "tshirt",
+      "enabled": true,
+      "created_at": "2026-01-28T16:02:26.854632342+08:00",
+      "updated_at": "2026-01-28T16:02:26.854632439+08:00"
+    }
+  },
+  "alert_server": {
+    "url": "http://192.168.1.82:80/api/account/ai/alarm",
+    "enabled": false,
+    "updated_at": "2025-09-19T11:51:06.199237219+08:00"
+  }
+}

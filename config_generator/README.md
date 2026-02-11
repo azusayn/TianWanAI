@@ -10,7 +10,7 @@
 
   ```bash
     # Windows 环境下
-    ./generate.exe -c config.yaml
+    ./generate.exe -c <输入文件.yaml> -o <输出文件.yaml>
   ```
 
 6.将生成的配置文件 `tianwan_config.json` 导入摄像头平台

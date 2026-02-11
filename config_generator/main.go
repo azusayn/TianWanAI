@@ -2,6 +2,7 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"log/slog"
 	"os"
@@ -10,7 +11,32 @@ import (
 
 	"github.com/google/uuid"
 	"github.com/xuri/excelize/v2"
+	"gopkg.in/yaml.v3"
 )
+
+// Config represents the structure of config.yaml
+type Config struct {
+	Tianwan1    []string `yaml:"tianwan1"`
+	Tianwan2    []string `yaml:"tianwan2"`
+	AlertServer string   `yaml:"alert_server"`
+	ExcelPath   string   `yaml:"excel_path"`
+	FilterMap   []string `yaml:"filter_map"`
+}
+
+// LoadConfig loads configuration from YAML file
+func LoadConfig(filePath string) (*Config, error) {
+	data, err := os.ReadFile(filePath)
+	if err != nil {
+		return nil, fmt.Errorf("failed to read config file: %w", err)
+	}
+
+	var config Config
+	if err := yaml.Unmarshal(data, &config); err != nil {
+		return nil, fmt.Errorf("failed to unmarshal config: %w", err)
+	}
+
+	return &config, nil
+}
 
 // read from excel file.
 type ModelType string
@@ -126,20 +152,17 @@ func ReadCameraInfoFromExcel(filePath string) ([]CameraInfo, error) {
 	return cameras, nil
 }
 
-// Usage:
-func readCamerasFromFile(filePath string) []CameraInfo {
+func readCamerasFromFile(filePath string, filterList []string) []CameraInfo {
 	cameras, err := ReadCameraInfoFromExcel(filePath)
 	if err != nil {
-		slog.Error("failed to read cameras' info from excel")
+		slog.Error("failed to read cameras' info from excel", "error", err)
+		return nil
 	}
 
-	// filter map
-	filterMap := map[string]bool{
-		"5M1DTW102TV": true,
-		"6M2DTW101TV": true,
-		"6M2DTW104TV": true,
-		"5M0DTW126TV": true,
-		"5M0DTW134TV": true,
+	// 将 filterList 转换为 map 以便快速查找
+	filterMap := make(map[string]bool)
+	for _, device := range filterList {
+		filterMap[device] = true
 	}
 
 	var filteredCameras []CameraInfo
@@ -154,10 +177,10 @@ func readCamerasFromFile(filePath string) []CameraInfo {
 
 type InferenceServer struct {
 	ID          string    `json:"id"`
-	Name        string    `json:"name"` // User-friendly name/alias
+	Name        string    `json:"name"`
 	URL         string    `json:"url"`
-	ModelType   string    `json:"model_type"`            // e.g., "yolo", "detectron2", "custom"
-	Description string    `json:"description,omitempty"` // Optional description
+	ModelType   string    `json:"model_type"`
+	Description string    `json:"description,omitempty"`
 	Enabled     bool      `json:"enabled"`
 	CreatedAt   time.Time `json:"created_at"`
 	UpdatedAt   time.Time `json:"updated_at"`
@@ -166,15 +189,14 @@ type InferenceServer struct {
 // InferenceServerBinding represents a binding between camera and inference server with threshold
 type InferenceServerBinding struct {
 	ServerID     string  `json:"server_id"`
-	Threshold    float64 `json:"threshold"`     // Minimum confidence threshold (0.0-1.0) for saving images
-	MaxThreshold float64 `json:"max_threshold"` // Maximum confidence threshold (0.0-1.0) for saving images
+	Threshold    float64 `json:"threshold"`
+	MaxThreshold float64 `json:"max_threshold"`
 }
-
 type CameraConfig struct {
 	ID                      string                   `json:"id"`
-	Name                    string                   `json:"name"` // Now directly contains KKS encoding
+	Name                    string                   `json:"name"`
 	RTSPUrl                 string                   `json:"rtsp_url"`
-	InferenceServerBindings []InferenceServerBinding `json:"inference_server_bindings,omitempty"` // Array of server bindings with thresholds
+	InferenceServerBindings []InferenceServerBinding `json:"inference_server_bindings,omitempty"`
 	Enabled                 bool                     `json:"enabled"`
 	Running                 bool                     `json:"running"`
 	CreatedAt               time.Time                `json:"created_at"`
@@ -183,15 +205,15 @@ type CameraConfig struct {
 
 // AlertServerConfig represents the global alert server configuration
 type AlertServerConfig struct {
-	URL       string    `json:"url"`     // Alert platform URL
-	Enabled   bool      `json:"enabled"` // Whether alert is enabled globally
+	URL       string    `json:"url"`
+	Enabled   bool      `json:"enabled"`
 	UpdatedAt time.Time `json:"updated_at"`
 }
 
 type DataStore struct {
 	Cameras          map[string]*CameraConfig    `json:"cameras"`
 	InferenceServers map[string]*InferenceServer `json:"inference_servers"`
-	AlertServer      *AlertServerConfig          `json:"alert_server,omitempty"` // Global alert server config
+	AlertServer      *AlertServerConfig          `json:"alert_server,omitempty"`
 }
 
 // TODO: move these functions to 'common' package
@@ -217,39 +239,29 @@ func findAvailableServerId(servers []AvailableServer, modelType string) string {
 }
 
 func main() {
+	// cli args.
+	configPath := flag.String("c", "config.yaml", "配置文件路径 (默认: config.yaml)")
+	outputPath := flag.String("o", "tianwan_config.json", "输出文件路径 (默认: tianwan_config.json)")
+	flag.Parse()
+
+	// load configuration from YAML file
+	config, err := LoadConfig(*configPath)
+	if err != nil {
+		slog.Error("failed to load config", "error", err, "path", *configPath)
+		return
+	}
+	slog.Info("loading config from: " + *configPath)
 	serverConfig := DataStore{
 		Cameras:          make(map[string]*CameraConfig),
 		InferenceServers: make(map[string]*InferenceServer),
 		AlertServer: &AlertServerConfig{
-			URL:       "http://192.168.1.82:80/api/account/ai/alarm",
+			URL:       config.AlertServer,
 			Enabled:   false,
 			UpdatedAt: time.Now(),
 		},
 	}
 
 	// generate 'inference_servers' section
-	availableAServerAddrs := []string{
-		"192.168.1.86:8901",
-		"192.168.1.86:8902",
-		"192.168.1.86:8903",
-		"192.168.1.86:8904",
-		"192.168.1.86:8905",
-		"192.168.1.86:8906",
-		"192.168.1.86:8907",
-		"192.168.1.86:8908",
-		"192.168.1.86:8909",
-		"192.168.1.86:8910",
-		"192.168.1.86:8911",
-		"192.168.1.86:8912",
-		"192.168.1.86:8913",
-		"192.168.1.86:8914",
-	}
-	availableBServerAddrs := []string{
-		"192.168.1.86:8915",
-		"192.168.1.86:8916",
-		"192.168.1.86:8917",
-		"192.168.1.86:8918",
-	}
 	aServerModelTypes := []string{
 		"mouse",
 		"ponding",
@@ -263,7 +275,7 @@ func main() {
 	}
 
 	allAvailableServers := make(map[string][]AvailableServer)
-	for i, addr := range availableAServerAddrs {
+	for i, addr := range config.Tianwan1 {
 		var availableServerByIp []AvailableServer
 		for _, t := range aServerModelTypes {
 			id := fmt.Sprintf("inf_%s_%s", t, GenerateUUID())
@@ -290,7 +302,7 @@ func main() {
 		allAvailableServers[addr] = availableServerByIp
 	}
 
-	for i, addr := range availableBServerAddrs {
+	for i, addr := range config.Tianwan2 {
 		var availableServerByIp []AvailableServer
 
 		t := "safetybelt"
@@ -313,7 +325,7 @@ func main() {
 
 	// generate 'cameras' section
 	ia, ib := 0, 0
-	for _, c := range readCamerasFromFile("docs/info.xlsx") {
+	for _, c := range readCamerasFromFile(config.ExcelPath, config.FilterMap) {
 		// basic info
 		cid := fmt.Sprintf("cam_%s", GenerateUUID())
 		camera := CameraConfig{
@@ -328,20 +340,19 @@ func main() {
 		// bindings
 		for _, m := range c.Models {
 			binding := InferenceServerBinding{
-				Threshold: 0.5,
-				// TODO: 0 means no max limit
+				Threshold:    0.5,
 				MaxThreshold: 0,
 			}
 			// arrange to type B server
 			if m == "safetybelt" {
-				ip := availableBServerAddrs[ib]
+				ip := config.Tianwan2[ib]
 				binding.ServerID = findAvailableServerId(allAvailableServers[ip], m)
-				ib = (ib + 1) % len(availableBServerAddrs)
+				ib = (ib + 1) % len(config.Tianwan2)
 			} else {
 				// arrange to type A server
-				ip := availableAServerAddrs[ia]
+				ip := config.Tianwan1[ia]
 				binding.ServerID = findAvailableServerId(allAvailableServers[ip], m)
-				ia = (ia + 1) % len(availableAServerAddrs)
+				ia = (ia + 1) % len(config.Tianwan1)
 			}
 			camera.InferenceServerBindings = append(camera.InferenceServerBindings, binding)
 		}
@@ -355,8 +366,10 @@ func main() {
 		return
 	}
 
-	if err := os.WriteFile("config.json", data, 0644); err != nil {
+	if err := os.WriteFile(*outputPath, data, 0644); err != nil {
 		slog.Error("failed to write json data to local file")
 		return
 	}
+
+	slog.Info("config.json generated successfully")
 }
